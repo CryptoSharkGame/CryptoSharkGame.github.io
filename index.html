@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Samuel</title>
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;}
+        html,body {height:100%;overflow-x:hidden;font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            background: linear-gradient(135deg, #0a0a14, #141424);
+            color:#c0c0c0;
+            line-height:1.2;
+            text-align:center;
+            animation: fadeBackground 12s infinite alternate;
+        }
+        .container {min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;}
+        .content {max-width:900px;padding:25px;background:linear-gradient(135deg,rgba(255,255,255,0.02),rgba(255,255,255,0.05));border-radius:15px;backdrop-filter:blur(12px);box-shadow:0 8px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.05);}
+        h1 {font-size:1.8em;color:#00cc99;text-shadow:0 0 6px #00cc99,0 0 12px #00cc99;margin:6px 0;}
+        h2 {font-size:1.2em;color:#cc3333;text-shadow:0 0 5px #cc3333;margin:4px 0;}
+        h3 {font-size:1em;color:#3eb7b0;text-shadow:0 0 4px #3eb7b0;margin:8px 0;}
+        p {font-size:0.85em;margin:2px 0;}
+        .rows {display:flex;flex-direction:column;gap:10px;}
+        .row {display:flex;justify-content:space-between;margin:5px 0;}
+        .column {flex:1;padding:10px;}
+        ul {list-style:none;margin:4px 0;}
+        ul li {font-size:0.85em;margin:3px 0;opacity:0.95;transition:opacity 0.3s ease;}
+        ul li:hover {opacity:1;text-shadow:0 0 3px #b0b0b0;}
+        a {color:#00cc99;text-decoration:none;transition:color 0.3s ease;}
+        a:hover {color:#cc3333;text-shadow:0 0 6px #cc3333;}
+        @media (max-width:600px) {.content{padding:20px;max-width:90%;}.row{flex-direction:column;gap:10px;}}
+
+        /* Fade Background Animation */
+        @keyframes fadeBackground {
+            0% {background: linear-gradient(135deg, #0a0a14, #141424);}
+            50% {background: linear-gradient(135deg, #141424, #1e1e36);}
+            100% {background: linear-gradient(135deg, #0a0a14, #141424);}
+        }
+
+        /* Snow Falling Effect */
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            color: #e0e0e0;
+            font-size: 1em;
+            user-select: none;
+            opacity: 0.7;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {transform: translateY(-10vh);}
+            100% {transform: translateY(110vh);}
+        }
+        .snowflake:nth-child(1) {left: 10%; animation-duration: 6s; font-size: 0.8em;}
+        .snowflake:nth-child(2) {left: 20%; animation-duration: 5s; font-size: 1.2em;}
+        .snowflake:nth-child(3) {left: 30%; animation-duration: 7s; font-size: 0.9em;}
+        .snowflake:nth-child(4) {left: 40%; animation-duration: 6.5s; font-size: 1em;}
+        .snowflake:nth-child(5) {left: 50%; animation-duration: 5.5s; font-size: 1.1em;}
+        .snowflake:nth-child(6) {left: 60%; animation-duration: 6s; font-size: 0.7em;}
+        .snowflake:nth-child(7) {left: 70%; animation-duration: 7.5s; font-size: 1em;}
+        .snowflake:nth-child(8) {left: 80%; animation-duration: 6s; font-size: 0.9em;}
+        .snowflake:nth-child(9) {left: 90%; animation-duration: 5s; font-size: 1.2em;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Hi, I'm Samuel</h1><h2>Developer</h2><p>19 years old • Quebec, Canada</p>
+            <div class="rows">
+                <div class="row">
+                    <div class="column">
+                        <h3>Language</h3><p>I code in:</p><p>C# C++ Python HTML CSS JavaScript Java Lua</p>
+                    </div>
+                    <div class="column">
+                        <h3>What I Do</h3><ul><li>🖥️ Computer Reparator / Fixer</li><li>🌐 Web Developer</li><li>📱 App Developer</li><li>🎨 Graphic Designer</li></ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>I mostly use</h3><p>C++ & Python</p>
+                    </div>
+                    <div class="column">
+                        <h3>People Helped</h3><p>+437</p><p>⭐ ⭐ ⭐ ⭐ ⭐</p><p>Rated 5 Stars</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Contact</h3><p>🌐 GitHub: <a href="https://github.com/madebysosacode" target="_blank">madebysosacode</a></p><p>💬 Discord: @SosaC#0001</p>
+            <h3>✨ Portfolio Presentation by Samuel - 2025</h3>
+        </div>
+    </div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+</body>
+</html>
